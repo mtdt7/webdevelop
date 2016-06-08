@@ -1,0 +1,105 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Business Form</h1>
+    </div>  
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Business Information
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Enter a Business Address</label>
+                                <input class="form-control" type="text" g-places-autocomplete ng-model="fc.data" />
+                                <span class="text-danger" ng-if="fc.showWarning">Invalid Address: Please select a location with a street address
+                                </span>
+                            </div>
+
+                            <div ng-if="fc.showForm">
+
+                                <div class="form-group col-xs-12">
+                                    <label>Name</label>
+                                    <input class="form-control" type="text" ng-model="fc.data.name" />
+                                </div>
+                                
+                                <div class="form-group col-xs-12">
+                                    <label>Address</label>
+                                    <input class="form-control" type="text" ng-model="fc.formatted.address" />
+                                </div>
+
+                                <div class="form-group col-sm-4">
+                                    <label>City</label>
+                                    <input class="form-control" type="text" ng-model="fc.formatted.city" />
+                                </div>
+
+                                <div class="form-group col-sm-4">
+                                    <label>State</label>
+                                    <input class="form-control" type="text" ng-model="fc.formatted.state" />
+                                </div>
+
+                                <div class="form-group col-sm-4">
+                                    <label>Zip</label>
+                                    <input class="form-control" type="text" ng-model="fc.formatted.zip" />
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label>Lat</label>
+                                    <input class="form-control" type="number" ng-model="fc.formatted.lat" />
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <label>Lng</label>
+                                    <input class="form-control" type="number" ng-model="fc.formatted.lng" />
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label>Sales Phone Number</label>
+                                    <input class="form-control" type="text" ng-model="fc.data.formatted_phone_number" />
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label>Service Phone Number</label>
+                                    <input class="form-control" type="text" ng-model="fc.data.formatted_phone_number" />
+                                </div>
+
+                                <!-- <div class="form-group col-md-4">
+                                    <label>Available Twilio Numbers</label>
+                                    <button type="button" class="btn btn-default dropdown-block" ng-model="fc.twilioNumber" data-html="1" bs-options="number as number.friendlyName for number in fc.availableNumbers" bs-select>
+                                      Action <span class="caret"></span>
+                                    </button>
+                                </div> -->
+                                <div class="form-group col-md-4 col-sm-6">
+                                    <label>Available Twilio Numbers</label>
+                                    <select class="form-control">
+                                        <option>123-456-7890</option>
+                                        <option>432-567-1234</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-xs-12">
+                                    <label>Website URL</label>
+                                    <input class="form-control" type="text" ng-model="fc.data.website" />
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <button type="button" class="btn btn-success btn-lg" ng-click="submitData()">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
