@@ -4,7 +4,7 @@
 ####1. Clone this project
 
 ```sh
-$ git clone https://github.com/start-angular/sb-admin-angular.git
+$ git clone https://github.com/mtdt7/webdevelop
 ```
 
 ####2.  Make sure you have [bower](http://bower.io/), [grunt-cli](https://www.npmjs.com/package/grunt-cli) and  [npm](https://www.npmjs.org/) installed globally
